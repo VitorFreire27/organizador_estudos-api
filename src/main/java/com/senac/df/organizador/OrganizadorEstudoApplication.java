@@ -8,8 +8,6 @@ public class OrganizadorEstudoApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(OrganizadorEstudoApplication.class, args);
-//      View App = new View();
-//      App.iniciar();
 	}
 
 }

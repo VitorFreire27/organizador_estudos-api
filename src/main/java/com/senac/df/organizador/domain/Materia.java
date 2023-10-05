@@ -5,15 +5,15 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-import org.hibernate.validator.constraints.Length;
+import org.springframework.stereotype.Component;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
-import jakarta.validation.constraints.NotEmpty;
 
+@Component
 @Entity
 public class Materia implements Serializable {
 
@@ -22,8 +22,8 @@ public class Materia implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
-	@NotEmpty(message= "Campo NOME é requerido")
-	@Length(min= 3, max= 50, message= "Campo NOME deve ter entre 3 e 50 caracteres")
+//	@NotEmpty(message= "Campo NOME é requerido")
+//	@Length(min= 3, max= 50, message= "Campo NOME deve ter entre 3 e 50 caracteres")
 	private String name;
 	@OneToMany(mappedBy = "materia")
 	private List<Conteudo> Conteudos = new ArrayList<>();

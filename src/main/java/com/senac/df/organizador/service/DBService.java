@@ -29,8 +29,8 @@ public class DBService {
 		Conteudo c = new Conteudo(null, "Álgebra Linear", m1);
 		Conteudo c1 = new Conteudo(null, "Probabilidade", m);
 
-		Usuario u = new Usuario(null, "vitormf27@gmail.com", "Senha123!");
-		Usuario u1 = new Usuario(null, "davimf27@gmail.com", "Senha123!");
+		Usuario u = new Usuario(null, "Vitor Moraes", "vitormf27@gmail.com", "Senha123!");
+		Usuario u1 = new Usuario(null, "Davi Freire", "davimf27@gmail.com", "Senha123!");
 
 		m.getConteudos().addAll(Arrays.asList(c1));
 		m1.getConteudos().addAll(Arrays.asList(c));
