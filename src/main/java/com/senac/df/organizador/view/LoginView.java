@@ -7,6 +7,7 @@ import com.senac.df.organizador.service.UsuarioService;
 import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.formlayout.FormLayout;
+import com.vaadin.flow.component.html.H1;
 import com.vaadin.flow.component.notification.Notification;
 import com.vaadin.flow.component.notification.Notification.Position;
 import com.vaadin.flow.component.orderedlayout.FlexComponent;
@@ -38,6 +39,8 @@ public class LoginView extends VerticalLayout {
 
 		setSizeFull();
 
+		H1 h1 = new H1("Login");
+		
 		formLayout.setWidth("300px");
 		formLayout.getStyle().set("margin", "0 auto"); 
 
@@ -50,7 +53,7 @@ public class LoginView extends VerticalLayout {
 		loginButton.getStyle().set("font-size", "16px");
 		registerLink.getStyle().set("color", "#007ba2");
 
-		add(formLayout, loginButton, registerLink);
+		add(h1, formLayout, loginButton, registerLink);
 
 		registerLink.getElement().getStyle().set("margin-top", "10px");
 
